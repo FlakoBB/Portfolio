@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap");
+@keyframes pelota {
+  0% {
+    transform: translate(0%);
+  }
+  50% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+  color: #D3F1F1;
+}
+
+body {
+  background-color: #101010;
+}
+
+.presentacion {
+  background-color: black;
+  width: 100vw;
+  height: calc(100vh - 4em);
+  padding: 4em 5em;
+}
+.presentacion .nombre {
+  text-align: left;
+}
+.presentacion .nombre span {
+  font-size: 8em;
+  font-weight: 700;
+}
+.presentacion .ocupacion {
+  text-align: right;
+}
+.presentacion .ocupacion span {
+  font-size: 6em;
+  font-weight: 400;
+}
+
+.menu {
+  width: 100vw;
+  height: 4em;
+  background-color: black;
+  border-bottom: 1px solid #D3F1F1;
+}
+.menu ul {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+}
+.menu ul li a:hover {
+  text-decoration: underline;
+  color: #1B8C8F;
+}
+
+/*# sourceMappingURL=styles.css.map */

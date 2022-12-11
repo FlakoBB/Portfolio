@@ -1,0 +1,121 @@
+@import 'animaciones';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+
+$bg_body: #101010;
+$main_text: #D3F1F1;
+$my_blue: #1B8C8F;
+
+@mixin seccion_st {
+    position: relative;
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 9em 5em 5em 5em;
+    border-bottom: 1px solid $main_text;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    color: $main_text;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bg_body;
+}
+
+.presentacion {
+    // background-color: black;
+    max-width: 100vw;
+    height: calc(100vh - 4em);
+    position: relative;
+    overflow: hidden;
+
+    .bg-video {
+        width: 100vw;
+        // height: calc(100vh - 4em);
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        opacity: .6;
+        z-index: -1;
+    }
+
+    .datos {
+        padding: 4em 5em;
+        z-index: 2;
+
+        .nombre {
+            text-align: left;
+            
+            span {
+                font-size: 8em;
+                font-weight: 700;
+            }
+        }
+    
+        .ocupacion {
+            text-align: right;
+    
+            span {
+                font-size: 6em;
+                font-weight: 400;
+            }
+        }
+    }    
+}
+
+.menu {
+    max-width: 100vw;
+    height: 4em;
+    background-color: black;
+    border-bottom: 1px solid $main_text;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                font-size: 1.2em;
+                font-weight: 400;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $my_blue;
+                }
+            }
+        }
+    }
+}
+
+.sobre-mi {
+    @include seccion_st();
+}
+
+.habil {
+    @include seccion_st();
+}
+
+.proyectos {
+    @include seccion_st();
+}
+
+.contacto {
+    @include seccion_st();
+}
