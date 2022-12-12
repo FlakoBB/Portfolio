@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Joseph Ryan | Portfolio</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
     <nav class="menu">
         <ul>
             <li><a href="#sobreMi">Sobre mí</a></li>
-            <li><a href="#habil">Habilidades</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -32,19 +32,51 @@
 
     <!-- Sobre Mí -->
     <section class="sobre-mi" id="sobreMi">
-        <h1>Hola</h1>
+        <h1 class="titulo-section">Sobre Mí</h1>
+        <p>Soy Joseph Ryan, desarrollador web con constante actitud de aprendizaje tanto en equipo como de manera autodidacta.</p>
+        <p>Estudié hasta el quinto semestre de Ingeniería en Sistemas Computacionales; donde adquirí habilidades de manejo de base de datos y desarrollo web. Además de la facultad de trabajo colaborativo.</p>
+        <p>En la actualidad pertenezco a OpenBootcamp; una institución educativa española enfocada en desarrollo de software, en donde estoy formando mis habilidades técnicas para especializarme cómo desarrollador FullStack.</p>
+
     </section>
 
-    <section class="habil" id="habil">
-        <h1>Habilidades</h1>
+    <section class="habilidades" id="habilidades">
+        <h1 class="titulo-section">Habilidades</h1>
     </section>
 
     <section class="proyectos" id="proyectos">
-        <h1>Proyectos</h1>
+        <h1 class="titulo-section">Proyectos</h1>
     </section>
 
     <section class="contacto" id="contacto">
-        <h1>Contacto</h1>
+        <h1 class="titulo-section">Contacto</h1>
+        <article class="contacto-sec">
+            <div class="msj-contacto">
+                <form action="#">
+                    <div class="input-group">
+                        <label for="nom_contacto">Nombre:</label><br>
+                        <input type="text" name="" id="nom_contacto">
+                    </div>
+                    <div class="input-group">
+                        <label for="mail_contacto">Correo:</label><br>
+                        <input type="email" name="" id="mail_contacto">
+                    </div>
+                    <div class="input-group">
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="btn">Enviar</button>
+                </form>
+            </div>
+    
+            <div class="redes">
+                <div class="reds"><a href=""><img src="assets/images/004-github.png" alt="rrss"></a></div>
+                <div class="reds"><a href=""><img src="assets/images/006-linkedin.png" alt="rrss"></a></div>
+                <div class="reds"><a href=""><img src="assets/images/001-instagram.png" alt="rrss"></a></div>
+                <div class="reds"><a href=""><img src="assets/images/003-twitter.png" alt="rrss"></a></div>
+                <div class="reds"><a href=""><img src="assets/images/002-youtube.png" alt="rrss"></a></div>
+                <div class="reds"><a href=""><img src="assets/images/005-spotify.png" alt="rrss"></a></div>
+            </div>
+        </article>
     </section>
 </body>
 </html>

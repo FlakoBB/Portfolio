@@ -13,6 +13,20 @@ $my_blue: #1B8C8F;
     border-bottom: 1px solid $main_text;
 }
 
+@mixin flex_center_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin form_text {
+    background-color: $main_text;
+    color: $my_blue;
+    outline: none;
+    border: none;
+    padding: .4em;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -108,7 +122,7 @@ body {
     @include seccion_st();
 }
 
-.habil {
+.habilidades {
     @include seccion_st();
 }
 
@@ -118,4 +132,52 @@ body {
 
 .contacto {
     @include seccion_st();
+
+    .contacto-sec {
+        @include flex_center_center();
+
+        .msj-contacto {
+            flex: 1;
+            align-self: stretch;
+            padding: .8em;
+
+            form {
+                width: 100%;
+                @include flex_center_center();
+                flex-direction: column;
+                gap: .6em;
+
+                .input-group {
+                    width: 100%;
+
+                    input {
+                        width: 100%;
+                        @include form_text();
+                    }
+
+                    label {
+                        font-size: 1.2em;
+                        font-weight: 300;
+                    }
+
+                    textarea {
+                        width: 100%;
+                        max-height: 5em;
+                        resize: none;
+                        @include form_text();
+                    }
+                }
+            }
+        }
+
+        .redes {
+            max-width: 50%;
+            padding: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 4em;
+        }
+    }
 }

@@ -1,0 +1,39 @@
+@import 'globals';
+
+.titulo-section {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.reds {
+    width: 6em;
+    background-color: $main_text;
+    border-radius: 50%;
+    padding: .4em;
+    @include flex_center_center;
+
+    a {
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        @include flex_center_center;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.btn {
+    padding: .6em 4em;
+    background-color: $my_blue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $main_text;
+        color: $my_blue;
+    }
+}
