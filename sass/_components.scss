@@ -1,4 +1,4 @@
-@import 'globals';
+@use 'globals';
 
 .titulo-section {
     font-size: 2em;
@@ -8,16 +8,16 @@
 
 .reds {
     width: 6em;
-    background-color: $main_text;
+    background-color: globals.$main_text;
     border-radius: 50%;
     padding: .4em;
-    @include flex_center_center;
+    @include globals.flex_center_center;
 
     a {
         text-decoration: none;
         width: 100%;
         height: 100%;
-        @include flex_center_center;
+        @include globals.flex_center_center;
 
         img {
             width: 100%;
@@ -27,13 +27,27 @@
 
 .btn {
     padding: .6em 4em;
-    background-color: $my_blue;
+    background-color: globals.$my_blue;
     border: none;
+    border-radius: 1em;
     outline: none;
     cursor: pointer;
 
     &:hover {
-        background-color: $main_text;
-        color: $my_blue;
+        background-color: globals.$main_text;
+        color: globals.$my_blue;
+    }
+}
+
+.mi-foto {
+    min-width: 20em;
+    background-color: globals.$main_text;
+    padding: .4em;
+    border-radius: 50%;
+    @include globals.flex_center_center;
+
+    img {
+        width: 100%;
+        border-radius: 50%;
     }
 }

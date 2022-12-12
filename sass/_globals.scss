@@ -24,6 +24,7 @@ $my_blue: #1B8C8F;
     color: $my_blue;
     outline: none;
     border: none;
+    border-radius: 1em;
     padding: .4em;
 }
 
@@ -120,6 +121,19 @@ body {
 
 .sobre-mi {
     @include seccion_st();
+
+    .contenido-mi {
+        @include flex_center_center();
+        gap: 6em;
+
+        .mi-descripcion {
+            p {
+                font-size: 1.2em;
+                font-weight: 400;
+                margin-bottom: 1em;
+            }
+        }
+    }
 }
 
 .habilidades {
@@ -158,6 +172,7 @@ body {
                     label {
                         font-size: 1.2em;
                         font-weight: 300;
+                        margin-left: .8em;
                     }
 
                     textarea {
