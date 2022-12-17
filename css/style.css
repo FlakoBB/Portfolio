@@ -159,7 +159,7 @@ body {
   outline: none;
   border: none;
   border-radius: 1em;
-  padding: 0.4em;
+  padding: 0.4em 1em;
 }
 .contacto .contacto-sec .msj-contacto form .input-group label {
   font-size: 1.2em;
@@ -175,7 +175,7 @@ body {
   outline: none;
   border: none;
   border-radius: 1em;
-  padding: 0.4em;
+  padding: 0.4em 1em;
 }
 .contacto .contacto-sec .redes {
   max-width: 50%;
@@ -185,6 +185,14 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 4em;
+}
+
+.tarjetas-proyectos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6em;
 }
 
 .titulo-section {
@@ -239,6 +247,100 @@ body {
 .mi-foto img {
   width: 100%;
   border-radius: 50%;
+}
+
+.tarjeta-pro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 16em;
+  background-color: #1B8C8F;
+  border-radius: 1em;
+  padding: 1em;
+}
+.tarjeta-pro .titulo-pro {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.tarjeta-pro img {
+  width: 100%;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 1em;
+  border: 1px solid #D3F1F1;
+  margin: 0.6em 0;
+}
+.tarjeta-pro .desc-pro {
+  font-weight: 400;
+  text-align: center;
+}
+.tarjeta-pro hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #D3F1F1;
+  margin: 0.6em 0;
+}
+.tarjeta-pro .tec-used {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6em;
+}
+.tarjeta-pro .tec-used .tec-html {
+  font-size: 0.8em;
+  font-weight: 300;
+  border-radius: 1em;
+  border: none;
+  padding: 0.4em 0.8em;
+  text-shadow: #000 0.1em 0.1em;
+  background-color: #e34c26;
+}
+.tarjeta-pro .tec-used .tec-css {
+  font-size: 0.8em;
+  font-weight: 300;
+  border-radius: 1em;
+  border: none;
+  padding: 0.4em 0.8em;
+  text-shadow: #000 0.1em 0.1em;
+  background-color: #563d7c;
+}
+.tarjeta-pro .tec-used .tec-js {
+  font-size: 0.8em;
+  font-weight: 300;
+  border-radius: 1em;
+  border: none;
+  padding: 0.4em 0.8em;
+  text-shadow: #000 0.1em 0.1em;
+  background-color: #f1e05a;
+}
+.tarjeta-pro .tec-used .tec-java {
+  font-size: 0.8em;
+  font-weight: 300;
+  border-radius: 1em;
+  border: none;
+  padding: 0.4em 0.8em;
+  text-shadow: #000 0.1em 0.1em;
+  background-color: #b07219;
+}
+.tarjeta-pro .tec-used .tec-python {
+  font-size: 0.8em;
+  font-weight: 300;
+  border-radius: 1em;
+  border: none;
+  padding: 0.4em 0.8em;
+  text-shadow: #000 0.1em 0.1em;
+  background-color: #3572a5;
+}
+.tarjeta-pro .tec-used .tec-scss {
+  font-size: 0.8em;
+  font-weight: 300;
+  border-radius: 1em;
+  border: none;
+  padding: 0.4em 0.8em;
+  text-shadow: #000 0.1em 0.1em;
+  background-color: #c6538c;
 }
 
 /*# sourceMappingURL=style.css.map */

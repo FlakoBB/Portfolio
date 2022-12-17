@@ -25,7 +25,7 @@ $my_blue: #1B8C8F;
     outline: none;
     border: none;
     border-radius: 1em;
-    padding: .4em;
+    padding: .4em 1em;
 }
 
 * {
@@ -195,4 +195,10 @@ body {
             gap: 4em;
         }
     }
+}
+
+.tarjetas-proyectos {
+    @include flex_center_center();
+    flex-wrap: wrap;
+    gap: 6em;
 }
