@@ -1,7 +1,8 @@
+@use 'sass:color';
 @use 'globals';
 
 // Colores-Tecnologías
-$js_color: #f1e05a;
+$js_color: #dbc520;
 $css_color: #563d7c;
 $scss_color: #c6538c;
 $html_color: #e34c26;
@@ -9,12 +10,11 @@ $java_color: #b07219;
 $python_color: #3572a5;
 
 @mixin tecnologia {
-    font-size: .8em;
+    font-size: .6em;
     font-weight: 300;
     border-radius: 1em;
     border: none;
     padding: .4em .8em;
-    text-shadow: #000 .1em .1em;
 }
 
 .titulo-section {
@@ -72,70 +72,110 @@ $python_color: #3572a5;
 .tarjeta-pro {
     @include globals.flex_center_center;
     flex-direction: column;
-    width: 16em;
-    background-color: globals.$my_blue;
+    width: 14em;
+    background-color: globals.$main_text;
     border-radius: 1em;
+    border: 1px solid globals.$my_blue;
     padding: 1em;
 
     .titulo-pro {
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-weight: 700;
+        color: globals.$my_blue;
     }
 
     img {
         width: 100%;
-        height: 10em;
+        height: 8em;
         object-fit: cover;
         border-radius: 1em;
-        border: 1px solid globals.$main_text;
+        border: 1px solid globals.$my_blue;
         margin: .6em 0;
     }
 
     .desc-pro {
+        font-size: .8em;
         font-weight: 400;
         text-align: center;
+        color: globals.$my_blue;
     }
 
     hr {
         width: 100%;
         border: none;
-        border-top: 1px solid globals.$main_text;
+        border-top: 1px solid globals.$my_blue;
         margin: .6em 0;
     }
 
     .tec-used {
         @include globals.flex_center_center;
+        justify-content: start;
         flex-wrap: wrap;
         gap: .6em;
 
         .tec-html {
             @include tecnologia();
             background-color: $html_color;
+
+            &::before {
+                content: 'HTML';
+            }
         }
 
         .tec-css {
             @include tecnologia();
             background-color: $css_color;
+
+            &::before {
+                content: 'CSS';
+            }
         }
 
         .tec-js {
             @include tecnologia();
             background-color: $js_color;
+
+            &::before {
+                content: 'JavaScript'
+            }
         }
 
         .tec-java {
             @include tecnologia();
             background-color: $java_color;
+
+            &::before {
+                content: 'Java';
+            }
         }
 
         .tec-python {
             @include tecnologia();
             background-color: $python_color;
+
+            &::before {
+                content: 'Python';
+            }
         }
 
         .tec-scss {
             @include tecnologia();
             background-color: $scss_color;
+
+            &::before {
+                content: 'SCSS';
+            }
+        }
+    }
+
+    .enlaces-pro {
+        width: 100%;
+        @include globals.flex_center_center;
+        justify-content: space-evenly;
+
+        button.btn {
+            font-size: .6em;
+            padding: .4em 2em;
         }
     }
 }
