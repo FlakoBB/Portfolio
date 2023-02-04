@@ -194,6 +194,9 @@ body {
   flex-wrap: wrap;
   gap: 6em;
 }
+.tarjetas-proyectos .tarjeta-pro {
+  align-self: stretch;
+}
 
 .titulo-section {
   font-size: 2em;
@@ -367,8 +370,12 @@ body {
   justify-content: space-evenly;
 }
 .tarjeta-pro .enlaces-pro button.btn {
-  font-size: 0.6em;
   padding: 0.4em 2em;
+  font-size: 0.6em;
+}
+.tarjeta-pro .enlaces-pro button.btn a {
+  font-size: 1em;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

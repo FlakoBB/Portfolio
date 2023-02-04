@@ -174,8 +174,13 @@ $python_color: #3572a5;
         justify-content: space-evenly;
 
         button.btn {
-            font-size: .6em;
             padding: .4em 2em;
+            font-size: .6em;
+
+            a {
+                font-size: 1em;
+                text-decoration: none;
+            }
         }
     }
 }

@@ -201,4 +201,8 @@ body {
     @include flex_center_center();
     flex-wrap: wrap;
     gap: 6em;
+
+    .tarjeta-pro {
+        align-self: stretch;
+    }
 }
