@@ -369,12 +369,9 @@ body {
   justify-content: center;
   justify-content: space-evenly;
 }
-.tarjeta-pro .enlaces-pro button.btn {
+.tarjeta-pro .enlaces-pro a.btn {
   padding: 0.4em 2em;
   font-size: 0.6em;
-}
-.tarjeta-pro .enlaces-pro button.btn a {
-  font-size: 1em;
   text-decoration: none;
 }
 

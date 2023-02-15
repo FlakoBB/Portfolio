@@ -173,14 +173,10 @@ $python_color: #3572a5;
         @include globals.flex_center_center;
         justify-content: space-evenly;
 
-        button.btn {
+        a.btn {
             padding: .4em 2em;
             font-size: .6em;
-
-            a {
-                font-size: 1em;
-                text-decoration: none;
-            }
+            text-decoration: none;
         }
     }
 }
