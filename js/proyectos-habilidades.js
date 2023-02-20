@@ -13,6 +13,14 @@ export const proyectos = [
         descripcion: "Lista de tareas usando JavaScript y estilos Bootstrap",
         tecnologias: ['tec-html', 'tec-js'],
         enlaces: {repositorio: 'https://github.com/FlakoBB/lista-tareas', despliegue: 'https://flakobb.github.io/lista-tareas/'}
+    },
+
+    {
+        titulo: "Reloj Digital",
+        imagen: {src: "./assets/images/P_RelojDigital.png", alt: "relojdigital"},
+        descripcion: "Reloj Dijital, Temporizador y Cronometro programados en JS con estilos CSS",
+        tecnologias: ['tec-html', 'tec-js', 'tec-css'],
+        enlaces: {repositorio: 'https://github.com/FlakoBB/reloj-digital', despliegue: 'https://flakobb.github.io/reloj-digital/'}
     }
 ]
 
